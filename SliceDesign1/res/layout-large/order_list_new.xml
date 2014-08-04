@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/imgBgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@drawable/photo1" >
+                </ImageView>
+
+                <View
+                    android:id="@+id/imgBgMask"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="#25000000" >
+                </View>
+            </FrameLayout>
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/imgBg" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="350dp" -->
+            <!-- android:background="@drawable/photo1" > -->
+            <!-- </ImageView> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/callwaiter" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_above="@+id/callwaiterAdjust" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:paddingLeft="20dp" -->
+            <!-- android:src="@drawable/circle_checkbox" > -->
+            <!-- </ImageView> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/callwaiterAdjust" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentBottom="true" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:paddingBottom="50dp" /> -->
+
+            <TextView
+                android:id="@+id/restaurantMyOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+<!--         <ExpandableListView -->
+<!--             android:id="@+id/orderlist" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_marginBottom="5dp" -->
+<!--             android:groupIndicator="@null" /> -->
+
+			<ListView
+		        android:id="@+id/orderlist"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" 
+		        android:dividerHeight="-1dp"
+		        android:layout_marginBottom="5dp">
+		    </ListView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:textColor="@color/black"
+            android:text="Cancel Order" />
+
+        <Button
+            android:id="@+id/confirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_btn_gradient"
+            android:textColor="@color/white"
+            android:text="Confirm Order" />
+        
+        <Button
+            android:id="@+id/payBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yellow_btn_gradient"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="PayBill" />
+    </LinearLayout>
+
+</LinearLayout>

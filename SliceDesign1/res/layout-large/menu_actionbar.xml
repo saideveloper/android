@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbarBg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <ImageView
+        android:id="@+id/homeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:src="@drawable/ic_ab_back_holo_dark_am"
+        android:visibility="visible" />
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/home" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:paddingLeft="18dp" -->
+    <!-- android:paddingRight="1dp" -->
+    <!-- android:visibility="visible" -->
+    <!-- android:src="@drawable/home_icon" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/title" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_toRightOf="@+id/home" -->
+    <!-- android:text="TextView" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="24sp" -->
+    <!-- android:textStyle="bold" /> -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/homeup"
+        android:paddingLeft="0dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/callwaiter"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_action_search_circle" />
+
+    <ImageView
+        android:id="@+id/callwaiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/order"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_action_call_circle" />
+
+    <RelativeLayout
+        android:id="@+id/order"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/quicmenu" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_order_circle" />
+
+        <RelativeLayout
+            android:id="@+id/orderMenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_black_circle" >
+
+            <TextView
+                android:id="@+id/orderMenuItemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/order" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_toLeftOf="@+id/quicmenu" -->
+    <!-- android:paddingRight="12dp" -->
+    <!-- android:src="@drawable/ic_order_circle" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/quicmenu" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:paddingRight="10dp" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:src="@drawable/ic_action_navigation_drawer" /> -->
+
+    <ImageView
+        android:id="@+id/quicmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:src="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark_circle" />
+
+</RelativeLayout>

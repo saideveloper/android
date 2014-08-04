@@ -1,0 +1,164 @@
+<!-- <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- xmlns:tools="http://schemas.android.com/tools" -->
+<!-- android:id="@+id/textView1" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="60dp" -->
+<!-- android:layout_marginLeft="5dp" -->
+<!-- android:gravity="center_vertical" -->
+<!-- android:padding="10dp" -->
+<!-- android:textColor="#000000" -->
+<!-- android:textSize="15sp" -->
+<!-- android:textStyle="bold" -->
+<!-- android:background="#CCFF99" -->
+<!-- /> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/imgBgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+        <ImageView
+            android:id="@+id/imgBg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/photo1" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/spinner1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_grey"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner" >
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:paddingTop="8dp"
+                android:background="@drawable/ic_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_grey"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/innerContent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/timestamp" >
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/qty" -->
+            <!-- android:layout_width="32dp" -->
+            <!-- android:layout_height="32dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="5" -->
+            <!-- android:background="@drawable/rectangle" -->
+            <!-- android:textColor="@color/black_light" -->
+            <!-- android:textSize="20sp" /> -->
+
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_toLeftOf="@+id/groupIndicator"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/groupIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next" >
+            </ImageView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="#25000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/content" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="60dp" -->
+    <!-- android:background="#e5e5e5" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/laptop" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:gravity="center_vertical|left" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:text="fff" -->
+    <!-- android:textSize="26sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/qty" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:gravity="center_vertical|right" -->
+    <!-- android:paddingRight="10dp" -->
+    <!-- android:text="5" -->
+    <!-- android:textSize="20sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <View -->
+    <!-- android:id="@+id/divider" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="2dp" -->
+    <!-- android:layout_marginLeft="0dp" -->
+    <!-- android:layout_marginRight="0dp" -->
+    <!-- android:background="#25000000" /> -->
+
+</LinearLayout>

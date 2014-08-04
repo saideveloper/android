@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/modifierTitle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="ItemName"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/modifierPrice" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- android:text="Rs 00.00" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="20sp" -->
+            <!-- android:textStyle="normal" /> -->
+
+            <LinearLayout
+                android:id="@+id/layoutQtyPrc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <!-- <View -->
+                <!-- android:id="@+id/nameUnderLine" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1.5dp" -->
+                <!-- android:layout_marginRight="10dp" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:background="@color/black_light" /> -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="0dp" >
+
+                            <TextView
+                                android:id="@+id/quantityTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Quantity:"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/modifierQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="0dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="|"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="0dp" >
+
+                            <TextView
+                                android:id="@+id/priceTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Rs:"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/modifierPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="100"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- <Spinner -->
+            <!-- android:id="@+id/modifiers" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="bottom" /> -->
+
+        </LinearLayout>
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/modifierAdd" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/addcircle" > -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:src="@drawable/ic_action_new" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/layoutAddEditRemove"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:padding="0dp" >
+
+            <View
+                android:id="@+id/bar1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/layoutAddRemove"
+                android:background="#25000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutAddRemove"
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/layoutAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_action_new" />
+
+                <View
+                    android:id="@+id/layoutAddRemoveDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#25000000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/layoutRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_action_minus"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/layoutChefnotes" -->
+            <!-- android:layout_width="60dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:layout_marginRight="0dp" -->
+            <!-- android:layout_marginTop="1dp" -->
+            <!-- android:background="@drawable/chefcircle" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:src="@drawable/ic_action_chat" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="center_horizontal" -->
+            <!-- android:text="Chef Note" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="12sp" /> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="60dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/layoutAdd" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginBottom="0dp" -->
+            <!-- android:layout_marginLeft="0dp" -->
+            <!-- android:layout_marginRight="1dp" -->
+            <!-- android:layout_marginTop="1dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/addcircle" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:src="@drawable/ic_action_new" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/layoutRemove" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:layout_marginLeft="0dp" -->
+            <!-- android:layout_marginRight="1dp" -->
+            <!-- android:layout_marginTop="0dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/removecircle" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:src="@drawable/ic_action_remove" /> -->
+            <!-- </RelativeLayout> -->
+            <!-- </LinearLayout> -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/hscrollbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView1" -->
+            <!-- android:background="@drawable/green_btn_gradient" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:layout_margin="1dp" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:text="TextView" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView1" -->
+            <!-- android:background="@drawable/green_btn_gradient" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:layout_margin="1dp" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:text="TextView" /> -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ExpandableListView
+        android:id="@+id/laptop_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ExpandableListView>
+
+    <!-- <Button -->
+    <!-- android:id="@+id/okay" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="Okay" /> -->
+
+</LinearLayout>

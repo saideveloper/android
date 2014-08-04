@@ -1,0 +1,148 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/imgBgLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imgBg"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="@drawable/bg_repeat2" >
+                    </ImageView>
+
+                    <View
+                        android:id="@+id/imgBgMask"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:background="#25000000"
+                        android:visibility="visible" >
+                    </View>
+                </FrameLayout>
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/imgBg" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="350dp" -->
+                <!-- android:background="@drawable/photo1" > -->
+                <!-- </ImageView> -->
+
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/callwaiter" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_above="@+id/callwaiterAdjust" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:paddingLeft="20dp" -->
+                <!-- android:src="@drawable/circle_checkbox" > -->
+                <!-- </ImageView> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/callwaiterAdjust" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:paddingBottom="50dp" /> -->
+
+                <TextView
+                    android:id="@+id/restaurantName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="40dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="t1"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/restaurantCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantName"
+                    android:paddingLeft="30dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="t2"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/imgBg" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="350dp" -->
+            <!-- android:background="@drawable/photo1" > -->
+            <!-- </ImageView> -->
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="-5dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+
+            <!-- <ListView -->
+            <!-- android:id="@+id/listView1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:divider="@drawable/listview_divider" -->
+            <!-- android:dividerHeight="0dp" -->
+            <!-- android:listSelector="@android:color/transparent" -->
+            <!-- android:scrollbars="none" > -->
+            <!-- </ListView> -->
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:orientation="vertical" >
+
+        <include layout="@layout/main_menu" />
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/mainMenuFragment" -->
+        <!-- android:name="com.restaurant.fragment.MainMenuFragment" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" /> -->
+
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/fragment_place" -->
+        <!-- android:name="com.restaurant.fragment.MainMenuFragment" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" /> -->
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
